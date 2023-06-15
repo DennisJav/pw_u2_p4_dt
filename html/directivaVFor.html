@@ -72,9 +72,13 @@
             <ul>
                 <li v-for="({nombre,apellido}, index) in miarreglo">
                     <span>{{index+1}} -- {{nombre }}</span>
-                    <blockquote>Apellido: {{apellido}}</blockquote>
+                    <blockquote v-if="apellido!==undefined">Apellido: {{apellido}}</blockquote>
+                    <!-- <blockquote v-show="apellido!==undefined">Apellido2: {{apellido}}</blockquote> -->
+                    
                 </li>
             </ul>
+
+
 
 
         </div>

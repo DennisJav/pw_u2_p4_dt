@@ -42,8 +42,7 @@ const app = Vue.createApp({
     agregarEstudianteDos() {
       console.log("Vamos a agregar: ");
       const nuevo = {
-        nombre: this.nombre,
-        apellido: "hola",
+        nombre: this.nombre
       };
       this.miarreglo.unshift(nuevo);
     },
